@@ -26,6 +26,8 @@ public class PlugAndPlayExperience : ModuleRules
 			new string[]
 			{
 				"Core",
+				"CoreUObject",
+				"GameFeatures",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -34,10 +36,9 @@ public class PlugAndPlayExperience : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"CoreUObject",
 				"Engine",
 				"Slate",
-				"SlateCore",
+				"SlateCore", 
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
